@@ -3,11 +3,10 @@ export default defineNuxtConfig({
     devtools: { enabled: true },
     modules: ["nuxt-directus"],
     runtimeConfig: {
-        directus: {
-            url: process.env.DIRECTUS_APP_URL,
+        public: {
+            directus: {
+                url: process.env.DIRECTUS_APP_URL,
+            },
         },
-    },
-    directus: {
-        url: process.env.DIRECTUS_APP_URL,
     },
 });
